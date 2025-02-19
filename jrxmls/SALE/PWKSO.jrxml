@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pwkso" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a81cd30c-1f98-49a4-975e-c6eb86346cec">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<parameter name="ORDER_NO" class="java.lang.String"/>
+	<parameter name="ORDER_DATE" class="java.lang.String"/>
+	<parameter name="PO_NO" class="java.lang.String"/>
+	<parameter name="ITEM_NAME_RMK" class="java.lang.String"/>
+	<parameter name="SAMPLE_FLAG" class="java.lang.String"/>
+	<parameter name="ITEM_SPEC" class="java.lang.String"/>
+	<parameter name="ORDER_QTY" class="java.lang.String"/>
+	<parameter name="REMARK" class="java.lang.String"/>
+	<parameter name="REMARK1" class="java.lang.String"/>
+	<parameter name="REMARK2" class="java.lang.String"/>
+	<parameter name="REMARK3" class="java.lang.String"/>
+	<parameter name="REMARK4" class="java.lang.String"/>
+	<parameter name="REMARK5" class="java.lang.String"/>
+	<parameter name="REMARK6" class="java.lang.String"/>
+	<parameter name="SPECIAL_RMK1" class="java.lang.String"/>
+	<parameter name="SPECIAL_RMK2" class="java.lang.String"/>
+	<parameter name="SPECIAL_RMK3" class="java.lang.String"/>
+	<parameter name="SPECIAL_RMK4" class="java.lang.String"/>
+	<parameter name="SPECIAL_RMK5" class="java.lang.String"/>
+	<parameter name="SPECIAL_RMK6" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="30" width="200" height="30" uuid="74685001-1a43-4d36-b22e-56e9a9cbadb1"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="微軟正黑體" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[訂製品 - - 工作傳單]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="320" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="20" y="20" width="60" height="20" uuid="337b05d1-17f4-4b0b-856b-1d99c471a6eb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[訂購單號:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="20" width="60" height="20" uuid="bc373a9e-e126-4e29-b260-cd951c72ad6c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[訂購日期:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="20" width="60" height="20" uuid="19783ae0-2da7-4695-ae44-377855d0cc42">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[採購單號:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="50" width="60" height="20" uuid="423c8124-fda6-49a8-b5ce-6ac6ef9148f7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[產品名稱:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="80" width="60" height="20" uuid="d63af3df-649e-4ab4-963f-c1febea868ed">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[產品規格:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="110" width="60" height="20" uuid="e069b1f7-ccae-46e4-8721-79d951f115f8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[訂單備註:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="50" width="45" height="20" uuid="668adcba-0b2b-4012-a9b1-9bbbcc8c4cbc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[附樣張:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="80" width="60" height="20" uuid="b6464038-adda-4d58-afe0-cbe3be28bf8a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[訂購數量:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="140" width="340" height="20" uuid="78af406d-a09c-492c-8cf0-3f95fa26ed85">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[產品備註]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="140" width="200" height="20" uuid="b3786c05-4fd2-4fd2-9542-febf56233275">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<text><![CDATA[特別注意事項]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="80" y="20" width="100" height="20" uuid="505f42a4-d222-4e69-bd44-a8ff1b83a736"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ORDER_NO}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="260" y="20" width="90" height="20" uuid="4116e141-740f-427d-8827-3029f815b01e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ORDER_DATE}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="420" y="20" width="100" height="20" uuid="7aec5b79-954c-4e84-bcff-4e6ee5d03105"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PO_NO}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="80" y="50" width="270" height="20" uuid="3b6f0e1c-e0f4-4822-b031-81911b2a9555"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ITEM_NAME_RMK}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="405" y="50" width="100" height="20" uuid="8689462e-8f68-4b5f-b839-3dd019fbc04f">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SAMPLE_FLAG}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="80" y="80" width="270" height="20" uuid="b1ee5423-bcba-478f-8775-81e14d0604f6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ITEM_SPEC}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="420" y="80" width="100" height="20" uuid="acfc4b20-effd-44b9-8b1c-034218a2cce9"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new DecimalFormat("#,###").format(new BigDecimal($P{ORDER_QTY}))]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="80" y="110" width="100" height="20" uuid="917e8e41-18bf-477a-af4a-7739181b12df"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REMARK}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="10" y="160" width="340" height="20" uuid="a4da4747-e515-4c8b-a2a7-c7eafae6e1fa">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REMARK1}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="10" y="180" width="340" height="20" uuid="976da6ec-4076-47d6-b3d6-0966522f9af8"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REMARK2}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="10" y="200" width="340" height="20" uuid="29d0b3cc-0994-4e84-bd12-3292cf297fe7"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REMARK3}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="10" y="220" width="340" height="20" uuid="f20c3282-80cf-45f8-9c70-85525ed47da5">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REMARK4}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="10" y="240" width="340" height="20" uuid="5e59487b-f9e5-410d-8c24-cd34e99feb63">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REMARK5}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="10" y="260" width="340" height="20" uuid="acfbf07e-dfe1-4a89-b92f-3535119befb8"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REMARK6}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="350" y="160" width="200" height="20" uuid="6f46b6ab-dae1-449a-aacd-ea12345704f4"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SPECIAL_RMK1}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="350" y="180" width="200" height="20" uuid="bcc68ba8-9ffe-4ca1-9ffd-a317f53fccc2"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SPECIAL_RMK2}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="350" y="200" width="200" height="20" uuid="912a65b1-19dd-43b7-b446-1ac24abf9432"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SPECIAL_RMK3}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="350" y="220" width="200" height="20" uuid="9bcbed8b-0f04-49a2-bb16-51f50452ebaa"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SPECIAL_RMK4}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="350" y="240" width="200" height="20" uuid="8b27195f-18fa-4e67-8b33-6fe9263d3810"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SPECIAL_RMK5}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="350" y="260" width="200" height="20" uuid="ec4ad21b-e511-417b-b968-4aa5d8ae9008"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="微軟正黑體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SPECIAL_RMK6}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>

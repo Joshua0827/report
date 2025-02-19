@@ -1,0 +1,1 @@
+start "ReportService" java -jar -Xms1024m -Xmx4096m report-0.0.1-SNAPSHOT.jar --server.port=80

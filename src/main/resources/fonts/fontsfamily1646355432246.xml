@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+	<fontFamily name="標楷體">
+		<normal><![CDATA[fonts/標楷體/kaiu.ttf]]></normal>
+		<bold><![CDATA[fonts/標楷體/kaiu.ttf]]></bold>
+		<italic><![CDATA[fonts/標楷體/kaiu.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/標楷體/kaiu.ttf]]></boldItalic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	<fontFamily name="微軟正黑體">
+		<normal><![CDATA[fonts/微軟正黑體/msjh.ttf]]></normal>
+		<bold><![CDATA[fonts/微軟正黑體/msjh.ttf]]></bold>
+		<italic><![CDATA[fonts/微軟正黑體/msjh.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/微軟正黑體/msjh.ttf]]></boldItalic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+</fontFamilies>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds"
+	debug="false">
+	<property name="logName" value="Report" />
+	<property name="logPath" value="./logs/${logName}" />
+	<!-- 格式化輸出：%d表示日期，%contextName表示模組(專案)名稱，%-5level：級別從左顯示5個字元寬度 %F類別名稱 %M方法名稱 
+		%L行號，%msg：訊息，%n換行 -->
+	<property name="logFormat"
+		value="%d{yyyy-MM-dd HH:mm:ss} %contextName %-5level %F %M %L -	%msg%n" />
+	<contextName>${logName}</contextName>
+
+	<!-- 輸出到console -->
+	<appender name="console"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>${logFormat}</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 輸出到檔案 -->
+	<appender name="file"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logPath}.log</file>
+		<!-- 日誌檔案最大的大小 -->
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+			<MaxFileSize>50MB</MaxFileSize>
+			<totalSizeCap>1GB</totalSizeCap>
+			<maxHistory>15</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${logFormat}</pattern>
+		</encoder>
+	</appender>
+
+	<root level="INFO" additivity="false">
+		<appender-ref ref="console" />
+		<appender-ref ref="file" />
+	</root>
+</configuration>
